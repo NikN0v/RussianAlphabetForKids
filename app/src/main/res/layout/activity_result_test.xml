@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_testresult"
+    tools:context=".ResultTest">
+
+    <ImageView
+        android:id="@+id/congrat"
+        android:layout_width="407dp"
+        android:layout_height="389dp"
+        android:layout_marginBottom="25dp"
+        app:layout_constraintBottom_toTopOf="@id/textView1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/fireworks"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:background="#3399FF"
+        android:gravity="center"
+        android:text="Всего ответов"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/textView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/congrat"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="2dp"
+        android:background="#339900"
+        android:gravity="center"
+        android:text="Правильно отвечено"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toTopOf="@id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView1"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="410dp"
+        android:layout_height="87dp"
+        android:layout_marginStart="2dp"
+        android:background="#CC3300"
+        android:gravity="center"
+        android:text="Неправильно отвечено"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
